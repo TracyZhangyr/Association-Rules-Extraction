@@ -22,21 +22,22 @@ def get_frequency_set(data, min_sup):
     while len(L_k) != 0:
         if L_k == [frozenset()]:
             L_candidates = [frozenset([item]) for item in items]
-        L_candidates = set()
-        for L_1 in L_k:
-            for L_2 in L_k:
-                for item in L_2:
-                    diff_ele = L_2.difference(set([item]))
-                    if diff_ele.issubset(L_1):
-                        r = frozenset(L_1.union(set([item])))
-                        if r not in L_candidates:
-                            L_candidates.add(r)
-        for candidate in set(L_candidates):
-            subsets = [candidate.difference([elem]) for elem in candidate]
-            for item in subsets:
-                if item not in L_k:
-                    L_candidates.remove(candidate)
-                    break
+        else: 
+            L_candidates = set()
+            for L_1 in L_k:
+                for L_2 in L_k:
+                    for item in L_2:
+                        diff_ele = L_2.difference(set([item]))
+                        if diff_ele.issubset(L_1):
+                            r = frozenset(L_1.union(set([item])))
+                            if r not in L_candidates:
+                                L_candidates.add(r)
+            for candidate in set(L_candidates):
+                subsets = [candidate.difference([elem]) for elem in candidate]
+                for item in subsets:
+                    if item not in L_k:
+                        L_candidates.remove(candidate)
+                        break
  
         candidates_freqs = {candidate:0 for candidate in list(L_candidates)}
         for item in data:
