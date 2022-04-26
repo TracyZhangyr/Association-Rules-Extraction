@@ -145,7 +145,7 @@ with open('/Users/test/Desktop/6111/Motor_Vehicle_Collisions_-_Crashes.csv', new
             filtered_data.append(data)
 
 
-with open('PROCESSED_CRUSH_DATA.csv', mode='w', newline='') as csvfile:
+with open('INTEGRATED-DATASET.csv', mode='w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
 
     writer.writerows(filtered_data)
