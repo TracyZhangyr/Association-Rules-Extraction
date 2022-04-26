@@ -9,6 +9,7 @@ def load_csv(dataset_name):
         data = []
         for row in datareader:
             data.append(set(row))
+        # print("Finished data loading.")
         return data
 
 def get_frequency_set(data, min_sup):
@@ -57,8 +58,11 @@ def get_frequency_set(data, min_sup):
 def main():
     
     # Input arguments format: <target dataset> <min_sup> <min_conf>
-    dataset = sys.argv[1] # Expected input: 'INTEGRATED-DATASET.csv'
-    min_sup, min_conf = float(sys.argv[2]), float(sys.argv[3]) # Expected input: 0.01, 0.5
+    # dataset = sys.argv[1] # Expected input: 'INTEGRATED-DATASET.csv'
+    dataset = 'INTEGRATED-DATASET.csv'
+    # min_sup, min_conf = float(sys.argv[2]), float(sys.argv[3]) # Expected input: 0.01, 0.5
+    min_sup = 0.01
+    min_conf = 0.5
 
     # Load data from target dataset
     data = load_csv(dataset)
