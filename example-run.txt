@@ -1,0 +1,889 @@
+==Frequent itemsets (min_sup=1.0%)
+['safe'], 67%
+['sedan'], 61%
+['winter'], 52%
+['suv'], 48%
+['spring'], 47%
+['sedan', 'safe'], 42%
+['winter', 'safe'], 36%
+['unspecified_borough'], 33%
+['suv', 'safe'], 32%
+['sedan', 'winter'], 32%
+['injured'], 32%
+['spring', 'safe'], 31%
+['spring', 'sedan'], 29%
+['suv', 'winter'], 25%
+['afternoon'], 24%
+['suv', 'spring'], 22%
+['sedan', 'winter', 'safe'], 22%
+['brooklyn'], 22%
+['unspecified_borough', 'safe'], 21%
+['sedan', 'unspecified_borough'], 21%
+['noon'], 19%
+['spring', 'sedan', 'safe'], 19%
+['sedan', 'injured'], 19%
+['suv', 'sedan'], 18%
+['morning'], 18%
+['queens'], 17%
+['unspecified_borough', 'winter'], 17%
+['suv', 'winter', 'safe'], 17%
+['suv', 'unspecified_borough'], 16%
+['winter', 'injured'], 16%
+['spring', 'unspecified_borough'], 16%
+['spring', 'injured'], 16%
+['night'], 15%
+['afternoon', 'safe'], 15%
+['suv', 'injured'], 15%
+['suv', 'spring', 'safe'], 15%
+['brooklyn', 'safe'], 15%
+['sedan', 'afternoon'], 14%
+['sedan', 'unspecified_borough', 'safe'], 14%
+['brooklyn', 'sedan'], 13%
+['noon', 'safe'], 13%
+['safe', 'morning'], 13%
+['afternoon', 'winter'], 12%
+['queens', 'safe'], 12%
+['suv', 'sedan', 'safe'], 12%
+['bronx'], 12%
+['midnight'], 12%
+['sedan', 'noon'], 11%
+['suv', 'afternoon'], 11%
+['unspecified_borough', 'injured'], 11%
+['brooklyn', 'winter'], 11%
+['unspecified_borough', 'safe', 'winter'], 11%
+['spring', 'afternoon'], 11%
+['unspecified_borough', 'sedan', 'winter'], 11%
+['sedan', 'queens'], 11%
+['brooklyn', 'suv'], 11%
+['manhattan'], 11%
+['suv', 'unspecified_borough', 'safe'], 10%
+['sedan', 'morning'], 10%
+['brooklyn', 'spring'], 10%
+['truck'], 10%
+['noon', 'winter'], 10%
+['spring', 'sedan', 'unspecified_borough'], 10%
+['spring', 'unspecified_borough', 'safe'], 10%
+['night', 'sedan'], 10%
+['night', 'safe'], 9%
+['sedan', 'afternoon', 'safe'], 9%
+['suv', 'sedan', 'winter'], 9%
+['sedan', 'winter', 'injured'], 9%
+['winter', 'morning'], 9%
+['spring', 'sedan', 'injured'], 9%
+['suv', 'noon'], 9%
+['spring', 'noon'], 9%
+['brooklyn', 'sedan', 'safe'], 9%
+['winter', 'queens'], 9%
+['dawn'], 9%
+['suv', 'queens'], 9%
+['suv', 'spring', 'sedan'], 9%
+['suv', 'morning'], 8%
+['suv', 'unspecified_borough', 'winter'], 8%
+['spring', 'morning'], 8%
+['afternoon', 'injured'], 8%
+['night', 'winter'], 8%
+['spring', 'queens'], 8%
+['sedan', 'noon', 'safe'], 8%
+['safe', 'bronx'], 8%
+['midnight', 'safe'], 8%
+['afternoon', 'safe', 'winter'], 8%
+['midnight', 'sedan'], 8%
+['brooklyn', 'winter', 'safe'], 8%
+['truck', 'safe'], 8%
+['suv', 'spring', 'unspecified_borough'], 8%
+['suv', 'winter', 'injured'], 7%
+['sedan', 'queens', 'safe'], 7%
+['suv', 'afternoon', 'safe'], 7%
+['sedan', 'afternoon', 'winter'], 7%
+['unspecified_borough', 'afternoon'], 7%
+['sedan', 'safe', 'morning'], 7%
+['brooklyn', 'suv', 'safe'], 7%
+['suv', 'spring', 'injured'], 7%
+['manhattan', 'safe'], 7%
+['sedan', 'unspecified_borough', 'safe', 'winter'], 7%
+['sedan', 'unspecified_borough', 'injured'], 7%
+['night', 'suv'], 7%
+['night', 'spring'], 7%
+['spring', 'afternoon', 'safe'], 7%
+['sedan', 'bronx'], 7%
+['brooklyn', 'sedan', 'winter'], 7%
+['brooklyn', 'injured'], 7%
+['suv', 'sedan', 'unspecified_borough'], 7%
+['noon', 'safe', 'winter'], 7%
+['brooklyn', 'spring', 'safe'], 7%
+['spring', 'sedan', 'afternoon'], 7%
+['winter', 'safe', 'morning'], 7%
+['winter', 'queens', 'safe'], 6%
+['suv', 'sedan', 'winter', 'safe'], 6%
+['dawn', 'safe'], 6%
+['spring', 'sedan', 'unspecified_borough', 'safe'], 6%
+['suv', 'noon', 'safe'], 6%
+['brooklyn', 'spring', 'sedan'], 6%
+['suv', 'sedan', 'injured'], 6%
+['night', 'sedan', 'safe'], 6%
+['winter', 'bronx'], 6%
+['unspecified_borough', 'noon'], 6%
+['spring', 'noon', 'safe'], 6%
+['midnight', 'winter'], 6%
+['suv', 'queens', 'safe'], 6%
+['noon', 'injured'], 6%
+['suv', 'safe', 'morning'], 6%
+['unspecified_borough', 'morning'], 6%
+['sedan', 'winter', 'noon'], 6%
+['suv', 'afternoon', 'winter'], 6%
+['spring', 'safe', 'morning'], 6%
+['manhattan', 'sedan'], 6%
+['suv', 'unspecified_borough', 'injured'], 6%
+['unspecified_borough', 'winter', 'injured'], 6%
+['sedan', 'winter', 'queens'], 5%
+['spring', 'unspecified_borough', 'injured'], 5%
+['sedan', 'dawn'], 5%
+['night', 'injured'], 5%
+['suv', 'spring', 'afternoon'], 5%
+['suv', 'unspecified_borough', 'safe', 'winter'], 5%
+['brooklyn', 'suv', 'winter'], 5%
+['sedan', 'winter', 'morning'], 5%
+['spring', 'sedan', 'noon'], 5%
+['suv', 'spring', 'sedan', 'safe'], 5%
+['brooklyn', 'afternoon'], 5%
+['midnight', 'sedan', 'safe'], 5%
+['spring', 'queens', 'safe'], 5%
+['midnight', 'spring'], 5%
+['suv', 'midnight'], 5%
+['manhattan', 'winter'], 5%
+['suv', 'bronx'], 5%
+['spring', 'bronx'], 5%
+['truck', 'winter'], 5%
+['night', 'sedan', 'winter'], 5%
+['injured', 'morning'], 5%
+['night', 'winter', 'safe'], 5%
+['manhattan', 'spring'], 5%
+['queens', 'injured'], 5%
+['night', 'unspecified_borough'], 5%
+['brooklyn', 'suv', 'spring'], 5%
+['sedan', 'winter', 'safe', 'afternoon'], 5%
+['spring', 'sedan', 'queens'], 5%
+['sedan', 'safe', 'bronx'], 5%
+['brooklyn', 'sedan', 'winter', 'safe'], 5%
+['spring', 'sedan', 'morning'], 5%
+['suv', 'spring', 'unspecified_borough', 'safe'], 5%
+['truck', 'spring'], 5%
+['suv', 'noon', 'winter'], 5%
+['winter', 'dawn'], 4%
+['unspecified_borough', 'afternoon', 'safe'], 4%
+['truck', 'sedan'], 4%
+['sedan', 'afternoon', 'injured'], 4%
+['unspecified_borough', 'sedan', 'afternoon'], 4%
+['suv', 'winter', 'morning'], 4%
+['suv', 'winter', 'queens'], 4%
+['suv', 'night', 'safe'], 4%
+['suv', 'dawn'], 4%
+['brooklyn', 'noon'], 4%
+['midnight', 'unspecified_borough'], 4%
+['spring', 'sedan', 'afternoon', 'safe'], 4%
+['winter', 'safe', 'bronx'], 4%
+['suv', 'sedan', 'afternoon'], 4%
+['suv', 'spring', 'noon'], 4%
+['night', 'spring', 'sedan'], 4%
+['midnight', 'winter', 'safe'], 4%
+['suv', 'manhattan'], 4%
+['night', 'spring', 'safe'], 4%
+['suv', 'sedan', 'unspecified_borough', 'safe'], 4%
+['sedan', 'winter', 'noon', 'safe'], 4%
+['brooklyn', 'spring', 'sedan', 'safe'], 4%
+['winter', 'afternoon', 'injured'], 4%
+['manhattan', 'sedan', 'safe'], 4%
+['suv', 'spring', 'queens'], 4%
+['spring', 'dawn'], 4%
+['sedan', 'winter', 'queens', 'safe'], 4%
+['afternoon', 'queens'], 4%
+['brooklyn', 'sedan', 'injured'], 4%
+['truck', 'winter', 'safe'], 4%
+['brooklyn', 'morning'], 4%
+['midnight', 'sedan', 'winter'], 4%
+['unspecified_borough', 'safe', 'morning'], 4%
+['sedan', 'dawn', 'safe'], 4%
+['brooklyn', 'suv', 'sedan'], 4%
+['suv', 'afternoon', 'injured'], 4%
+['truck', 'unspecified_borough'], 4%
+['sedan', 'winter', 'safe', 'morning'], 4%
+['suv', 'spring', 'morning'], 4%
+['spring', 'afternoon', 'injured'], 4%
+['unspecified_borough', 'noon', 'safe'], 4%
+['suv', 'unspecified_borough', 'afternoon'], 4%
+['suv', 'winter', 'safe', 'afternoon'], 4%
+['brooklyn', 'suv', 'winter', 'safe'], 3%
+['manhattan', 'winter', 'safe'], 3%
+['suv', 'midnight', 'safe'], 3%
+['midnight', 'sedan', 'spring'], 3%
+['sedan', 'winter', 'bronx'], 3%
+['unspecified_borough', 'sedan', 'noon'], 3%
+['suv', 'safe', 'bronx'], 3%
+['winter', 'unspecified_borough', 'afternoon'], 3%
+['spring', 'sedan', 'noon', 'safe'], 3%
+['night', 'winter', 'suv'], 3%
+['spring', 'unspecified_borough', 'afternoon'], 3%
+['suv', 'sedan', 'unspecified_borough', 'winter'], 3%
+['brooklyn', 'winter', 'injured'], 3%
+['midnight', 'spring', 'safe'], 3%
+['bus'], 3%
+['sedan', 'unspecified_borough', 'injured', 'winter'], 3%
+['truck', 'spring', 'safe'], 3%
+['taxi'], 3%
+['suv', 'spring', 'afternoon', 'safe'], 3%
+['spring', 'safe', 'bronx'], 3%
+['brooklyn', 'afternoon', 'safe'], 3%
+['bronx', 'injured'], 3%
+['suv', 'sedan', 'queens'], 3%
+['truck', 'sedan', 'safe'], 3%
+['spring', 'sedan', 'unspecified_borough', 'injured'], 3%
+['brooklyn', 'suv', 'spring', 'safe'], 3%
+['midnight', 'injured'], 3%
+['sedan', 'noon', 'injured'], 3%
+['sedan', 'unspecified_borough', 'morning'], 3%
+['brooklyn', 'night'], 3%
+['suv', 'truck'], 3%
+['manhattan', 'spring', 'safe'], 3%
+['night', 'sedan', 'winter', 'safe'], 3%
+['suv', 'spring', 'night'], 3%
+['unspecified_borough', 'dawn'], 3%
+['night', 'sedan', 'unspecified_borough'], 3%
+['winter', 'dawn', 'safe'], 3%
+['spring', 'sedan', 'queens', 'safe'], 3%
+['spring', 'sedan', 'safe', 'morning'], 3%
+['brooklyn', 'spring', 'injured'], 3%
+['night', 'sedan', 'injured'], 3%
+['brooklyn', 'suv', 'injured'], 3%
+['suv', 'noon', 'safe', 'winter'], 3%
+['noon', 'queens'], 3%
+['brooklyn', 'sedan', 'afternoon'], 3%
+['suv', 'spring', 'sedan', 'unspecified_borough'], 3%
+['manhattan', 'injured'], 3%
+['suv', 'sedan', 'noon'], 3%
+['spring', 'sedan', 'bronx'], 3%
+['suv', 'winter', 'safe', 'morning'], 3%
+['suv', 'dawn', 'safe'], 3%
+['suv', 'winter', 'queens', 'safe'], 3%
+['queens', 'morning'], 3%
+['brooklyn', 'noon', 'safe'], 3%
+['bike'], 3%
+['midnight', 'sedan', 'unspecified_borough'], 3%
+['suv', 'unspecified_borough', 'noon'], 3%
+['sedan', 'unspecified_borough', 'safe', 'afternoon'], 3%
+['winter', 'unspecified_borough', 'morning'], 3%
+['sedan', 'queens', 'injured'], 3%
+['suv', 'sedan', 'winter', 'injured'], 3%
+['suv', 'spring', 'sedan', 'injured'], 3%
+['unspecified_borough', 'noon', 'winter'], 3%
+['suv', 'manhattan', 'safe'], 3%
+['spring', 'noon', 'injured'], 3%
+['night', 'unspecified_borough', 'safe'], 3%
+['suv', 'unspecified_borough', 'morning'], 3%
+['spring', 'unspecified_borough', 'noon'], 3%
+['sedan', 'injured', 'morning'], 3%
+['sedan', 'dawn', 'winter'], 3%
+['afternoon', 'bronx'], 3%
+['noon', 'injured', 'winter'], 3%
+['manhattan', 'sedan', 'winter'], 3%
+['midnight', 'sedan', 'winter', 'safe'], 3%
+['suv', 'noon', 'injured'], 3%
+['suv', 'unspecified_borough', 'injured', 'winter'], 3%
+['suv', 'spring', 'noon', 'safe'], 3%
+['suv', 'sedan', 'morning'], 3%
+['spring', 'dawn', 'safe'], 3%
+['suv', 'winter', 'bronx'], 3%
+['night', 'winter', 'injured'], 3%
+['midnight', 'unspecified_borough', 'safe'], 3%
+['night', 'sedan', 'suv'], 3%
+['brooklyn', 'safe', 'morning'], 2%
+['manhattan', 'sedan', 'spring'], 2%
+['truck', 'unspecified_borough', 'safe'], 2%
+['suv', 'midnight', 'winter'], 2%
+['suv', 'spring', 'queens', 'safe'], 2%
+['suv', 'spring', 'unspecified_borough', 'injured'], 2%
+['brooklyn', 'afternoon', 'winter'], 2%
+['spring', 'unspecified_borough', 'morning'], 2%
+['suv', 'sedan', 'afternoon', 'safe'], 2%
+['bus', 'safe'], 2%
+['night', 'spring', 'sedan', 'safe'], 2%
+['night', 'queens'], 2%
+['brooklyn', 'suv', 'afternoon'], 2%
+['night', 'spring', 'injured'], 2%
+['brooklyn', 'suv', 'sedan', 'safe'], 2%
+['sedan', 'winter', 'safe', 'bronx'], 2%
+['suv', 'spring', 'safe', 'morning'], 2%
+['suv', 'queens', 'injured'], 2%
+['brooklyn', 'sedan', 'noon'], 2%
+['night', 'unspecified_borough', 'winter'], 2%
+['spring', 'sedan', 'dawn'], 2%
+['afternoon', 'unspecified_borough', 'injured'], 2%
+['brooklyn', 'spring', 'afternoon'], 2%
+['suv', 'sedan', 'unspecified_borough', 'injured'], 2%
+['afternoon', 'queens', 'safe'], 2%
+['winter', 'injured', 'morning'], 2%
+['spring', 'injured', 'morning'], 2%
+['suv', 'midnight', 'sedan'], 2%
+['winter', 'queens', 'injured'], 2%
+['truck', 'noon'], 2%
+['suv', 'truck', 'safe'], 2%
+['suv', 'morning', 'injured'], 2%
+['sedan', 'afternoon', 'queens'], 2%
+['dawn', 'injured'], 2%
+['bike', 'injured'], 2%
+['manhattan', 'afternoon'], 2%
+['midnight', 'suv', 'spring'], 2%
+['suv', 'night', 'injured'], 2%
+['truck', 'morning'], 2%
+['midnight', 'sedan', 'spring', 'safe'], 2%
+['spring', 'queens', 'injured'], 2%
+['night', 'unspecified_borough', 'suv'], 2%
+['truck', 'sedan', 'winter'], 2%
+['night', 'spring', 'unspecified_borough'], 2%
+['suv', 'spring', 'bronx'], 2%
+['suv', 'winter', 'dawn'], 2%
+['night', 'winter', 'safe', 'suv'], 2%
+['sedan', 'unspecified_borough', 'noon', 'safe'], 2%
+['sedan', 'unspecified_borough', 'safe', 'morning'], 2%
+['suv', 'unspecified_borough', 'safe', 'afternoon'], 2%
+['midnight', 'unspecified_borough', 'winter'], 2%
+['afternoon', 'sedan', 'winter', 'injured'], 2%
+['brooklyn', 'midnight'], 2%
+['afternoon', 'unspecified_borough', 'safe', 'winter'], 2%
+['manhattan', 'noon'], 2%
+['brooklyn', 'sedan', 'morning'], 2%
+['midnight', 'sedan', 'injured'], 2%
+['truck', 'injured'], 2%
+['staten_island'], 2%
+['suv', 'sedan', 'queens', 'safe'], 2%
+['unspecified_borough', 'sedan', 'winter', 'afternoon'], 2%
+['spring', 'unspecified_borough', 'safe', 'afternoon'], 2%
+['brooklyn', 'noon', 'winter'], 2%
+['spring', 'sedan', 'unspecified_borough', 'afternoon'], 2%
+['queens', 'safe', 'morning'], 2%
+['spring', 'sedan', 'afternoon', 'injured'], 2%
+['suv', 'manhattan', 'winter'], 2%
+['unspecified_borough', 'dawn', 'safe'], 2%
+['noon', 'queens', 'safe'], 2%
+['sedan', 'unspecified_borough', 'winter', 'suv', 'safe'], 2%
+['spring', 'sedan', 'truck'], 2%
+['unspecified_borough', 'sedan', 'dawn'], 2%
+['suv', 'sedan', 'winter', 'afternoon'], 2%
+['bronx', 'morning'], 2%
+['noon', 'bronx'], 2%
+['brooklyn', 'winter', 'morning'], 2%
+['spring', 'sedan', 'safe', 'bronx'], 2%
+['unspecified_borough', 'noon', 'injured'], 2%
+['brooklyn', 'sedan', 'afternoon', 'safe'], 2%
+['brooklyn', 'spring', 'noon'], 2%
+['manhattan', 'sedan', 'winter', 'safe'], 2%
+['unspecified_borough', 'morning', 'safe', 'winter'], 2%
+['sedan', 'winter', 'dawn', 'safe'], 2%
+['winter', 'queens', 'afternoon'], 2%
+['suv', 'spring', 'sedan', 'afternoon'], 2%
+['brooklyn', 'suv', 'noon'], 2%
+['brooklyn', 'night', 'sedan'], 2%
+['brooklyn', 'sedan', 'winter', 'injured'], 2%
+['suv', 'afternoon', 'queens'], 2%
+['night', 'spring', 'safe', 'suv'], 2%
+['taxi', 'safe'], 2%
+['brooklyn', 'truck'], 2%
+['sedan', 'bronx', 'injured'], 2%
+['suv', 'sedan', 'noon', 'safe'], 2%
+['truck', 'afternoon'], 2%
+['suv', 'winter', 'safe', 'bronx'], 2%
+['suv', 'unspecified_borough', 'safe', 'morning'], 2%
+['suv', 'spring', 'dawn'], 2%
+['brooklyn', 'night', 'safe'], 2%
+['brooklyn', 'suv', 'sedan', 'winter'], 2%
+['night', 'unspecified_borough', 'injured'], 2%
+['night', 'sedan', 'unspecified_borough', 'safe'], 2%
+['truck', 'safe', 'morning'], 2%
+['unspecified_borough', 'noon', 'safe', 'winter'], 2%
+['sedan', 'noon', 'queens'], 2%
+['midnight', 'sedan', 'unspecified_borough', 'safe'], 2%
+['suv', 'spring', 'manhattan'], 2%
+['midnight', 'spring', 'unspecified_borough'], 2%
+['afternoon', 'suv', 'winter', 'injured'], 2%
+['unspecified_borough', 'truck', 'winter'], 2%
+['suv', 'midnight', 'winter', 'safe'], 2%
+['manhattan', 'sedan', 'spring', 'safe'], 2%
+['suv', 'unspecified_borough', 'noon', 'safe'], 2%
+['afternoon', 'safe', 'bronx'], 2%
+['truck', 'noon', 'safe'], 2%
+['brooklyn', 'suv', 'morning'], 2%
+['brooklyn', 'spring', 'sedan', 'injured'], 2%
+['spring', 'sedan', 'unspecified_borough', 'suv', 'safe'], 2%
+['suv', 'sedan', 'dawn'], 2%
+['sedan', 'queens', 'morning'], 2%
+['truck', 'sedan', 'unspecified_borough'], 2%
+['brooklyn', 'sedan', 'noon', 'safe'], 2%
+['spring', 'afternoon', 'queens'], 2%
+['afternoon', 'unspecified_borough', 'winter', 'suv'], 2%
+['suv', 'spring', 'afternoon', 'injured'], 2%
+['brooklyn', 'suv', 'spring', 'sedan'], 2%
+['brooklyn', 'night', 'winter'], 2%
+['truck', 'unspecified_borough', 'spring'], 2%
+['suv', 'midnight', 'unspecified_borough'], 2%
+['suv', 'spring', 'unspecified_borough', 'afternoon'], 2%
+['unspecified_borough', 'dawn', 'winter'], 2%
+['midnight', 'queens'], 2%
+['spring', 'unspecified_borough', 'safe', 'morning'], 2%
+['sedan', 'unspecified_borough', 'noon', 'winter'], 1%
+['brooklyn', 'spring', 'morning'], 1%
+['brooklyn', 'afternoon', 'injured'], 1%
+['suv', 'sedan', 'safe', 'morning'], 1%
+['spring', 'unspecified_borough', 'noon', 'safe'], 1%
+['suv', 'sedan', 'bronx'], 1%
+['truck', 'sedan', 'winter', 'safe'], 1%
+['winter', 'bus'], 1%
+['brooklyn', 'winter', 'safe', 'afternoon'], 1%
+['night', 'queens', 'safe'], 1%
+['spring', 'sedan', 'dawn', 'safe'], 1%
+['brooklyn', 'suv', 'afternoon', 'safe'], 1%
+['winter', 'taxi'], 1%
+['unspecified_borough', 'injured', 'morning'], 1%
+['spring', 'sedan', 'unspecified_borough', 'noon'], 1%
+['sedan', 'unspecified_borough', 'morning', 'winter'], 1%
+['night', 'sedan', 'safe', 'suv'], 1%
+['night', 'bronx'], 1%
+['suv', 'truck', 'winter'], 1%
+['night', 'sedan', 'unspecified_borough', 'winter'], 1%
+['suv', 'sedan', 'winter', 'queens'], 1%
+['suv', 'midnight', 'sedan', 'safe'], 1%
+['night', 'sedan', 'winter', 'injured'], 1%
+['spring', 'bike'], 1%
+['spring', 'sedan', 'noon', 'injured'], 1%
+['winter', 'injured', 'bronx'], 1%
+['sedan', 'afternoon', 'bronx'], 1%
+['noon', 'queens', 'winter'], 1%
+['midnight', 'spring', 'injured'], 1%
+['suv', 'midnight', 'spring', 'safe'], 1%
+['spring', 'taxi'], 1%
+['manhattan', 'morning'], 1%
+['suv', 'winter', 'dawn', 'safe'], 1%
+['spring', 'bronx', 'injured'], 1%
+['spring', 'bus'], 1%
+['night', 'sedan', 'queens'], 1%
+['suv', 'sedan', 'winter', 'noon'], 1%
+['midnight', 'winter', 'injured'], 1%
+['brooklyn', 'suv', 'winter', 'injured'], 1%
+['suv', 'unspecified_borough', 'dawn'], 1%
+['manhattan', 'spring', 'injured'], 1%
+['suv', 'sedan', 'unspecified_borough', 'afternoon'], 1%
+['staten_island', 'sedan'], 1%
+['brooklyn', 'spring', 'afternoon', 'safe'], 1%
+['e-bike'], 1%
+['brooklyn', 'sedan', 'winter', 'afternoon'], 1%
+['brooklyn', 'dawn'], 1%
+['suv', 'spring', 'sedan', 'queens'], 1%
+['midnight', 'sedan', 'unspecified_borough', 'winter'], 1%
+['dawn', 'queens'], 1%
+['winter', 'queens', 'morning'], 1%
+['sedan', 'winter', 'noon', 'injured'], 1%
+['suv', 'noon', 'queens'], 1%
+['brooklyn', 'midnight', 'safe'], 1%
+['manhattan', 'afternoon', 'safe'], 1%
+['unspecified_borough', 'night', 'winter', 'safe'], 1%
+['brooklyn', 'midnight', 'sedan'], 1%
+['night', 'manhattan'], 1%
+['suv', 'spring', 'safe', 'bronx'], 1%
+['sedan', 'afternoon', 'queens', 'safe'], 1%
+['afternoon', 'winter', 'bronx'], 1%
+['brooklyn', 'sedan', 'safe', 'morning'], 1%
+['manhattan', 'noon', 'safe'], 1%
+['brooklyn', 'winter', 'noon', 'safe'], 1%
+['suv', 'unspecified_borough', 'morning', 'winter'], 1%
+['suv', 'manhattan', 'winter', 'safe'], 1%
+['suv', 'unspecified_borough', 'noon', 'winter'], 1%
+['staten_island', 'safe'], 1%
+['sedan', 'dawn', 'injured'], 1%
+['suv', 'spring', 'truck'], 1%
+['spring', 'sedan', 'unspecified_borough', 'morning'], 1%
+['suv', 'sedan', 'winter', 'morning'], 1%
+['suv', 'queens', 'morning'], 1%
+['spring', 'sedan', 'safe', 'truck'], 1%
+['brooklyn', 'truck', 'safe'], 1%
+['brooklyn', 'spring', 'sedan', 'afternoon'], 1%
+['sedan', 'bus'], 1%
+['manhattan', 'sedan', 'injured'], 1%
+['suv', 'midnight', 'injured'], 1%
+['night', 'spring', 'sedan', 'unspecified_borough'], 1%
+['bronx', 'safe', 'morning'], 1%
+['midnight', 'unspecified_borough', 'safe', 'winter'], 1%
+['brooklyn', 'suv', 'spring', 'injured'], 1%
+['brooklyn', 'night', 'suv'], 1%
+['suv', 'injured', 'bronx'], 1%
+['night', 'spring', 'sedan', 'injured'], 1%
+['manhattan', 'winter', 'injured'], 1%
+['suv', 'sedan', 'afternoon', 'injured'], 1%
+['brooklyn', 'winter', 'safe', 'morning'], 1%
+['spring', 'sedan', 'unspecified_borough', 'afternoon', 'safe'], 1%
+['spring', 'sedan', 'queens', 'injured'], 1%
+['sedan', 'unspecified_borough', 'winter', 'afternoon', 'safe'], 1%
+['sedan', 'winter', 'queens', 'injured'], 1%
+['brooklyn', 'spring', 'noon', 'safe'], 1%
+['midnight', 'unspecified_borough', 'injured'], 1%
+['sedan', 'winter', 'morning', 'injured'], 1%
+['spring', 'queens', 'morning'], 1%
+['spring', 'noon', 'queens'], 1%
+['afternoon', 'sedan', 'unspecified_borough', 'injured'], 1%
+['suv', 'spring', 'sedan', 'noon'], 1%
+['truck', 'queens'], 1%
+['noon', 'safe', 'bronx'], 1%
+['brooklyn', 'suv', 'noon', 'safe'], 1%
+['truck', 'afternoon', 'safe'], 1%
+['night', 'sedan', 'winter', 'suv'], 1%
+['night', 'unspecified_borough', 'safe', 'suv'], 1%
+['brooklyn', 'night', 'spring'], 1%
+['suv', 'noon', 'injured', 'winter'], 1%
+['spring', 'unspecified_borough', 'dawn'], 1%
+['suv', 'spring', 'dawn', 'safe'], 1%
+['afternoon', 'queens', 'injured'], 1%
+['truck', 'unspecified_borough', 'safe', 'winter'], 1%
+['taxi', 'injured'], 1%
+['night', 'winter', 'queens'], 1%
+['unspecified_borough', 'spring', 'noon', 'suv'], 1%
+['afternoon', 'suv', 'unspecified_borough', 'injured'], 1%
+['spring', 'sedan', 'morning', 'injured'], 1%
+['spring', 'bike', 'injured'], 1%
+['sedan', 'unspecified_borough', 'dawn', 'safe'], 1%
+['midnight', 'sedan', 'unspecified_borough', 'spring'], 1%
+['suv', 'spring', 'safe', 'manhattan'], 1%
+['sedan', 'winter', 'suv', 'afternoon', 'safe'], 1%
+['midnight', 'queens', 'safe'], 1%
+['suv', 'spring', 'noon', 'injured'], 1%
+['sedan', 'noon', 'queens', 'safe'], 1%
+['sedan', 'queens', 'safe', 'morning'], 1%
+['sedan', 'winter', 'brooklyn', 'suv', 'safe'], 1%
+['suv', 'truck', 'winter', 'safe'], 1%
+['bus', 'safe', 'winter'], 1%
+['brooklyn', 'suv', 'safe', 'morning'], 1%
+['unspecified_vehicle'], 1%
+['winter', 'queens', 'safe', 'afternoon'], 1%
+['winter', 'bike'], 1%
+['truck', 'sedan', 'unspecified_borough', 'safe'], 1%
+['brooklyn', 'sedan', 'noon', 'winter'], 1%
+['sedan', 'winter', 'queens', 'afternoon'], 1%
+['suv', 'sedan', 'dawn', 'safe'], 1%
+['brooklyn', 'night', 'injured'], 1%
+['brooklyn', 'suv', 'winter', 'afternoon'], 1%
+['suv', 'spring', 'unspecified_borough', 'morning'], 1%
+['manhattan', 'afternoon', 'winter'], 1%
+['spring', 'safe', 'bus'], 1%
+['suv', 'afternoon', 'bronx'], 1%
+['brooklyn', 'suv', 'spring', 'afternoon'], 1%
+['night', 'spring', 'unspecified_borough', 'safe'], 1%
+['manhattan', 'sedan', 'afternoon'], 1%
+['spring', 'sedan', 'suv', 'afternoon', 'safe'], 1%
+['night', 'queens', 'suv'], 1%
+['spring', 'safe', 'unspecified_borough', 'truck'], 1%
+['night', 'sedan', 'unspecified_borough', 'injured'], 1%
+['night', 'spring', 'sedan', 'suv'], 1%
+['truck', 'winter', 'morning'], 1%
+['suv', 'truck', 'unspecified_borough'], 1%
+['afternoon', 'unspecified_borough', 'winter', 'injured'], 1%
+['brooklyn', 'night', 'sedan', 'safe'], 1%
+['sedan', 'unspecified_borough', 'winter', 'injured', 'suv'], 1%
+['dawn', 'queens', 'safe'], 1%
+['suv', 'winter', 'queens', 'injured'], 1%
+['sedan', 'noon', 'bronx'], 1%
+['winter', 'dawn', 'injured'], 1%
+['suv', 'winter', 'morning', 'injured'], 1%
+['suv', 'spring', 'queens', 'injured'], 1%
+['suv', 'afternoon', 'queens', 'safe'], 1%
+['sedan', 'unspecified_borough', 'noon', 'injured'], 1%
+['midnight', 'suv', 'spring', 'sedan'], 1%
+['midnight', 'sedan', 'queens'], 1%
+['spring', 'afternoon', 'bronx'], 1%
+['suv', 'manhattan', 'sedan'], 1%
+['staten_island', 'winter'], 1%
+['truck', 'noon', 'winter'], 1%
+['sedan', 'morning', 'bronx'], 1%
+['sedan', 'bike'], 1%
+['sedan', 'taxi'], 1%
+['brooklyn', 'suv', 'sedan', 'injured'], 1%
+['afternoon', 'spring', 'unspecified_borough', 'injured'], 1%
+['midnight', 'manhattan'], 1%
+['suv', 'night', 'spring', 'injured'], 1%
+['sedan', 'safe', 'bus'], 1%
+['spring', 'sedan', 'unspecified_borough', 'injured', 'suv'], 1%
+['spring', 'sedan', 'brooklyn', 'suv', 'safe'], 1%
+['brooklyn', 'noon', 'injured'], 1%
+['spring', 'noon', 'truck'], 1%
+['suv', 'midnight', 'sedan', 'winter'], 1%
+['brooklyn', 'spring', 'safe', 'morning'], 1%
+['unspecified_borough', 'winter', 'dawn', 'safe'], 1%
+['suv', 'spring', 'sedan', 'morning'], 1%
+['sedan', 'unspecified_borough', 'winter', 'safe', 'morning'], 1%
+['brooklyn', 'suv', 'midnight'], 1%
+['brooklyn', 'spring', 'sedan', 'noon'], 1%
+['manhattan', 'safe', 'morning'], 1%
+['brooklyn', 'sedan', 'winter', 'morning'], 1%
+['manhattan', 'sedan', 'noon'], 1%
+['night', 'spring', 'queens'], 1%
+['midnight', 'spring', 'unspecified_borough', 'safe'], 1%
+['unspecified_borough', 'sedan', 'winter', 'dawn'], 1%
+['night', 'spring', 'unspecified_borough', 'suv'], 1%
+['suv', 'sedan', 'unspecified_borough', 'noon'], 1%
+['sedan', 'winter', 'queens', 'suv', 'safe'], 1%
+['sedan', 'unspecified_borough', 'noon', 'winter', 'safe'], 1%
+['unspecified_borough', 'taxi'], 1%
+['manhattan', 'truck'], 1%
+['truck', 'sedan', 'noon'], 1%
+['brooklyn', 'night', 'sedan', 'winter'], 1%
+['suv', 'midnight', 'unspecified_borough', 'safe'], 1%
+['suv', 'sedan', 'safe', 'bronx'], 1%
+['suv', 'spring', 'morning', 'injured'], 1%
+['brooklyn', 'midnight', 'winter'], 1%
+['suv', 'dawn', 'injured'], 1%
+['midnight', 'sedan', 'spring', 'injured'], 1%
+['brooklyn', 'injured', 'morning'], 1%
+['spring', 'dawn', 'injured'], 1%
+['noon', 'queens', 'safe', 'winter'], 1%
+['winter', 'queens', 'safe', 'morning'], 1%
+['suv', 'night', 'winter', 'injured'], 1%
+['truck', 'spring', 'injured'], 1%
+['spring', 'afternoon', 'queens', 'safe'], 1%
+['suv', 'manhattan', 'injured'], 1%
+['suv', 'night', 'unspecified_borough', 'winter'], 1%
+['midnight', 'bronx'], 1%
+['sedan', 'afternoon', 'safe', 'bronx'], 1%
+['spring', 'unspecified_borough', 'suv', 'afternoon', 'safe'], 1%
+['night', 'safe', 'bronx'], 1%
+['brooklyn', 'dawn', 'safe'], 1%
+['suv', 'bus'], 1%
+['night', 'sedan', 'queens', 'safe'], 1%
+['truck', 'sedan', 'injured'], 1%
+['manhattan', 'noon', 'winter'], 1%
+['unspecified_borough', 'bus'], 1%
+['bus', 'morning'], 1%
+['afternoon', 'bus'], 1%
+['truck', 'queens', 'safe'], 1%
+['spring', 'sedan', 'afternoon', 'queens'], 1%
+['unspecified_borough', 'winter', 'suv', 'afternoon', 'safe'], 1%
+['suv', 'spring', 'safe', 'truck'], 1%
+['truck', 'spring', 'morning'], 1%
+['night', 'sedan', 'unspecified_borough', 'suv'], 1%
+['staten_island', 'sedan', 'safe'], 1%
+['winter', 'noon', 'bronx'], 1%
+['brooklyn', 'truck', 'winter'], 1%
+['manhattan', 'noon', 'spring'], 1%
+['suv', 'sedan', 'noon', 'injured'], 1%
+['brooklyn', 'midnight', 'sedan', 'safe'], 1%
+['manhattan', 'afternoon', 'spring'], 1%
+['spring', 'sedan', 'unspecified_borough', 'noon', 'safe'], 1%
+['sedan', 'winter', 'brooklyn', 'afternoon', 'safe'], 1%
+['brooklyn', 'night', 'winter', 'safe'], 1%
+['unspecified_vehicle', 'injured'], 1%
+['taxi', 'winter', 'safe'], 1%
+['sedan', 'noon', 'winter', 'suv', 'safe'], 1%
+['unspecified_borough', 'winter', 'suv', 'safe', 'morning'], 1%
+['brooklyn', 'midnight', 'spring'], 1%
+['suv', 'noon', 'queens', 'safe'], 1%
+['spring', 'unspecified_borough', 'noon', 'injured'], 1%
+['sedan', 'unspecified_borough', 'winter', 'night', 'safe'], 1%
+['suv', 'unspecified_borough', 'dawn', 'safe'], 1%
+['truck', 'winter', 'injured'], 1%
+['spring', 'sedan', 'unspecified_borough', 'safe', 'morning'], 1%
+['suv', 'sedan', 'queens', 'injured'], 1%
+['night', 'sedan', 'bronx'], 1%
+['midnight', 'sedan', 'winter', 'injured'], 1%
+['afternoon', 'winter', 'safe', 'bronx'], 1%
+['midnight', 'sedan', 'unspecified_borough', 'winter', 'safe'], 1%
+['winter', 'morning', 'bronx'], 1%
+['unspecified_borough', 'dawn', 'injured'], 1%
+['brooklyn', 'sedan', 'afternoon', 'injured'], 1%
+['suv', 'sedan', 'unspecified_borough', 'morning'], 1%
+['truck', 'winter', 'safe', 'morning'], 1%
+['truck', 'unspecified_borough', 'injured'], 1%
+['suv', 'unspecified_borough', 'noon', 'injured'], 1%
+['brooklyn', 'spring', 'sedan', 'morning'], 1%
+['brooklyn', 'suv', 'noon', 'winter'], 1%
+['unspecified_borough', 'noon', 'winter', 'suv', 'safe'], 1%
+['spring', 'sedan', 'queens', 'suv', 'safe'], 1%
+['suv', 'queens', 'safe', 'morning'], 1%
+['brooklyn', 'sedan', 'dawn'], 1%
+['midnight', 'sedan', 'unspecified_borough', 'injured'], 1%
+['sedan', 'noon', 'queens', 'winter'], 1%
+['winter', 'bike', 'injured'], 1%
+['spring', 'bronx', 'morning'], 1%
+['truck', 'winter', 'afternoon'], 1%
+['brooklyn', 'suv', 'winter', 'morning'], 1%
+['manhattan', 'truck', 'safe'], 1%
+['night', 'spring', 'unspecified_borough', 'injured'], 1%
+['sedan', 'unspecified_borough', 'suv', 'afternoon', 'safe'], 1%
+['night', 'manhattan', 'safe'], 1%
+['suv', 'spring', 'afternoon', 'queens'], 1%
+['sedan', 'winter', 'suv', 'safe', 'morning'], 1%
+['staten_island', 'spring'], 1%
+['e-bike', 'safe'], 1%
+['spring', 'queens', 'safe', 'morning'], 1%
+['brooklyn', 'suv', 'spring', 'noon'], 1%
+['manhattan', 'taxi'], 1%
+['spring', 'sedan', 'bronx', 'injured'], 1%
+['suv', 'winter', 'queens', 'afternoon'], 1%
+['dawn', 'bronx'], 1%
+['suv', 'sedan', 'winter', 'bronx'], 1%
+['unspecified_borough', 'noon', 'injured', 'winter'], 1%
+['spring', 'noon', 'queens', 'safe'], 1%
+['sedan', 'winter', 'bronx', 'injured'], 1%
+['truck', 'bronx'], 1%
+['suv', 'sedan', 'winter', 'dawn'], 1%
+['sedan', 'unspecified_borough', 'morning', 'injured'], 1%
+['sedan', 'winter', 'queens', 'morning'], 1%
+['suv', 'night', 'sedan', 'injured'], 1%
+['night', 'truck'], 1%
+['spring', 'noon', 'bronx'], 1%
+['unspecified_borough', 'midnight', 'winter', 'suv'], 1%
+['van'], 1%
+['suv', 'sedan', 'morning', 'injured'], 1%
+['truck', 'noon', 'safe', 'winter'], 1%
+['afternoon', 'bike'], 1%
+['sedan', 'dawn', 'queens'], 1%
+['suv', 'manhattan', 'noon'], 1%
+['noon', 'queens', 'injured'], 1%
+['spring', 'sedan', 'brooklyn', 'afternoon', 'safe'], 1%
+['suv', 'bronx', 'morning'], 1%
+['midnight', 'winter', 'queens'], 1%
+['night', 'winter', 'queens', 'safe'], 1%
+['sedan', 'winter', 'noon', 'brooklyn', 'safe'], 1%
+['brooklyn', 'suv', 'sedan', 'afternoon'], 1%
+['suv', 'bike'], 1%
+['suv', 'manhattan', 'afternoon'], 1%
+['truck', 'sedan', 'afternoon'], 1%
+['unspecified_borough', 'truck', 'sedan', 'winter'], 1%
+['spring', 'afternoon', 'truck'], 1%
+['suv', 'noon', 'bronx'], 1%
+['sedan', 'bike', 'injured'], 1%
+['midnight', 'sedan', 'queens', 'safe'], 1%
+['night', 'winter', 'bronx'], 1%
+['truck', 'unspecified_borough', 'morning'], 1%
+['truck', 'sedan', 'morning'], 1%
+['spring', 'unspecified_borough', 'dawn', 'safe'], 1%
+['suv', 'midnight', 'queens'], 1%
+['afternoon', 'sedan', 'winter', 'bronx'], 1%
+['sedan', 'winter', 'night', 'suv', 'safe'], 1%
+['night', 'unspecified_borough', 'injured', 'winter'], 1%
+['suv', 'night', 'unspecified_borough', 'injured'], 1%
+['spring', 'safe', 'noon', 'truck'], 1%
+['ambulance'], 1%
+['spring', 'e-bike'], 1%
+['afternoon', 'bronx', 'injured'], 1%
+['night', 'sedan', 'winter', 'queens'], 1%
+['suv', 'manhattan', 'sedan', 'safe'], 1%
+['manhattan', 'sedan', 'afternoon', 'safe'], 1%
+['brooklyn', 'night', 'safe', 'suv'], 1%
+['spring', 'taxi', 'safe'], 1%
+['safe', 'afternoon', 'bus'], 1%
+['suv', 'dawn', 'queens'], 1%
+['suv', 'unspecified_borough', 'dawn', 'winter'], 1%
+['truck', 'sedan', 'noon', 'safe'], 1%
+['midnight', 'manhattan', 'safe'], 1%
+['suv', 'bus', 'safe'], 1%
+['suv', 'unspecified_borough', 'morning', 'injured'], 1%
+['suv', 'afternoon', 'safe', 'bronx'], 1%
+['spring', 'sedan', 'unspecified_borough', 'truck'], 1%
+==High-confidence association rules (min_conf=70.0%)
+['manhattan', 'truck'] => ['safe'] (Conf: 85%, Supp: 1%)
+['unspecified_vehicle'] => ['injured'] (Conf: 82%, Supp: 1%)
+['truck', 'winter', 'morning'] => ['safe'] (Conf: 82%, Supp: 1%)
+['spring', 'bike'] => ['injured'] (Conf: 81%, Supp: 1%)
+['truck', 'morning'] => ['safe'] (Conf: 80%, Supp: 2%)
+['sedan', 'bus'] => ['safe'] (Conf: 80%, Supp: 1%)
+['bus', 'afternoon'] => ['safe'] (Conf: 80%, Supp: 1%)
+['bike'] => ['injured'] (Conf: 79%, Supp: 2%)
+['dawn', 'queens'] => ['safe'] (Conf: 79%, Supp: 1%)
+['spring', 'bus'] => ['safe'] (Conf: 78%, Supp: 1%)
+['suv', 'bus'] => ['safe'] (Conf: 78%, Supp: 1%)
+['truck', 'noon', 'winter'] => ['safe'] (Conf: 78%, Supp: 1%)
+['truck', 'queens'] => ['safe'] (Conf: 78%, Supp: 1%)
+['truck', 'winter'] => ['safe'] (Conf: 78%, Supp: 4%)
+['winter', 'bike'] => ['injured'] (Conf: 77%, Supp: 1%)
+['suv', 'truck', 'winter'] => ['safe'] (Conf: 77%, Supp: 1%)
+['sedan', 'bike'] => ['injured'] (Conf: 77%, Supp: 1%)
+['truck', 'noon'] => ['safe'] (Conf: 76%, Supp: 2%)
+['brooklyn', 'truck'] => ['safe'] (Conf: 76%, Supp: 1%)
+['bus'] => ['safe'] (Conf: 76%, Supp: 2%)
+['truck', 'sedan', 'noon'] => ['safe'] (Conf: 76%, Supp: 1%)
+['truck'] => ['safe'] (Conf: 76%, Supp: 8%)
+['midnight', 'sedan', 'queens'] => ['safe'] (Conf: 76%, Supp: 1%)
+['truck', 'sedan', 'winter'] => ['safe'] (Conf: 76%, Supp: 1%)
+['truck', 'spring', 'noon'] => ['safe'] (Conf: 75%, Supp: 1%)
+['suv', 'truck'] => ['safe'] (Conf: 75%, Supp: 2%)
+['midnight', 'queens'] => ['safe'] (Conf: 74%, Supp: 1%)
+['winter', 'bus'] => ['safe'] (Conf: 74%, Supp: 1%)
+['truck', 'spring'] => ['safe'] (Conf: 74%, Supp: 3%)
+['truck', 'sedan'] => ['safe'] (Conf: 74%, Supp: 3%)
+['manhattan', 'sedan', 'winter'] => ['safe'] (Conf: 73%, Supp: 2%)
+['brooklyn', 'sedan', 'noon'] => ['safe'] (Conf: 73%, Supp: 2%)
+['winter', 'queens', 'morning'] => ['safe'] (Conf: 73%, Supp: 1%)
+['midnight', 'manhattan'] => ['safe'] (Conf: 73%, Supp: 1%)
+['suv', 'manhattan', 'sedan'] => ['safe'] (Conf: 73%, Supp: 1%)
+['truck', 'unspecified_borough', 'winter'] => ['safe'] (Conf: 73%, Supp: 1%)
+['sedan', 'winter', 'noon', 'brooklyn'] => ['safe'] (Conf: 73%, Supp: 1%)
+['manhattan', 'morning'] => ['safe'] (Conf: 73%, Supp: 1%)
+['truck', 'afternoon'] => ['safe'] (Conf: 72%, Supp: 1%)
+['sedan', 'winter', 'queens'] => ['safe'] (Conf: 72%, Supp: 4%)
+['suv', 'spring', 'truck'] => ['safe'] (Conf: 72%, Supp: 1%)
+['suv', 'spring', 'dawn'] => ['safe'] (Conf: 72%, Supp: 1%)
+['morning', 'bronx'] => ['safe'] (Conf: 72%, Supp: 1%)
+['sedan', 'winter', 'dawn'] => ['safe'] (Conf: 72%, Supp: 2%)
+['brooklyn', 'dawn'] => ['safe'] (Conf: 72%, Supp: 1%)
+['manhattan', 'sedan'] => ['safe'] (Conf: 72%, Supp: 4%)
+['truck', 'spring', 'sedan'] => ['safe'] (Conf: 72%, Supp: 1%)
+['suv', 'dawn'] => ['safe'] (Conf: 72%, Supp: 3%)
+['sedan', 'winter', 'bronx'] => ['safe'] (Conf: 72%, Supp: 2%)
+['midnight', 'sedan', 'winter'] => ['safe'] (Conf: 72%, Supp: 3%)
+['sedan', 'winter', 'morning'] => ['safe'] (Conf: 71%, Supp: 4%)
+['suv', 'winter', 'bronx'] => ['safe'] (Conf: 71%, Supp: 2%)
+['suv', 'winter', 'dawn'] => ['safe'] (Conf: 71%, Supp: 1%)
+['suv', 'manhattan', 'winter'] => ['safe'] (Conf: 71%, Supp: 1%)
+['sedan', 'queens', 'morning'] => ['safe'] (Conf: 71%, Supp: 1%)
+['staten_island', 'safe'] => ['sedan'] (Conf: 71%, Supp: 1%)
+['sedan', 'winter', 'noon'] => ['safe'] (Conf: 71%, Supp: 4%)
+['truck', 'unspecified_borough'] => ['safe'] (Conf: 71%, Supp: 2%)
+['winter', 'morning'] => ['safe'] (Conf: 71%, Supp: 7%)
+['winter', 'dawn'] => ['safe'] (Conf: 71%, Supp: 3%)
+['staten_island'] => ['sedan'] (Conf: 71%, Supp: 1%)
+['suv', 'manhattan'] => ['safe'] (Conf: 71%, Supp: 3%)
+['queens', 'morning'] => ['safe'] (Conf: 71%, Supp: 2%)
+['midnight', 'unspecified_borough', 'spring'] => ['sedan'] (Conf: 71%, Supp: 1%)
+['midnight', 'winter'] => ['safe'] (Conf: 71%, Supp: 4%)
+['brooklyn', 'winter', 'noon'] => ['safe'] (Conf: 71%, Supp: 1%)
+['brooklyn', 'noon'] => ['safe'] (Conf: 71%, Supp: 3%)
+['brooklyn', 'spring', 'noon'] => ['safe'] (Conf: 71%, Supp: 1%)
+['sedan', 'dawn'] => ['safe'] (Conf: 71%, Supp: 4%)
+['suv', 'spring', 'manhattan'] => ['safe'] (Conf: 71%, Supp: 1%)
+['suv', 'midnight', 'winter'] => ['safe'] (Conf: 71%, Supp: 2%)
+['winter', 'bronx'] => ['safe'] (Conf: 71%, Supp: 4%)
+['winter', 'queens'] => ['safe'] (Conf: 70%, Supp: 6%)
+['dawn'] => ['safe'] (Conf: 70%, Supp: 6%)
+['sedan', 'morning'] => ['safe'] (Conf: 70%, Supp: 7%)
+['midnight', 'spring', 'injured'] => ['sedan'] (Conf: 70%, Supp: 1%)
+['suv', 'winter', 'morning'] => ['safe'] (Conf: 70%, Supp: 3%)
+['brooklyn', 'suv', 'noon'] => ['safe'] (Conf: 70%, Supp: 1%)
+['midnight', 'unspecified_borough', 'safe'] => ['sedan'] (Conf: 70%, Supp: 2%)
+['brooklyn', 'winter', 'morning'] => ['safe'] (Conf: 70%, Supp: 1%)
+['midnight', 'unspecified_borough'] => ['sedan'] (Conf: 70%, Supp: 3%)
+['sedan', 'queens'] => ['safe'] (Conf: 70%, Supp: 7%)
+['midnight', 'unspecified_borough', 'winter', 'safe'] => ['sedan'] (Conf: 70%, Supp: 1%)
+['manhattan', 'sedan', 'spring'] => ['safe'] (Conf: 70%, Supp: 2%)
+['manhattan', 'winter'] => ['safe'] (Conf: 70%, Supp: 3%)
+['suv', 'winter', 'queens'] => ['safe'] (Conf: 70%, Supp: 3%)
+['truck', 'sedan', 'unspecified_borough'] => ['safe'] (Conf: 70%, Supp: 1%)
+['midnight', 'unspecified_borough', 'injured'] => ['sedan'] (Conf: 70%, Supp: 1%)
+['manhattan', 'sedan', 'afternoon'] => ['safe'] (Conf: 70%, Supp: 1%)
+['morning'] => ['safe'] (Conf: 70%, Supp: 13%)
+['midnight', 'queens', 'safe'] => ['sedan'] (Conf: 70%, Supp: 1%)
+['suv', 'bronx'] => ['safe'] (Conf: 70%, Supp: 3%)
+['midnight', 'unspecified_borough', 'winter'] => ['sedan'] (Conf: 70%, Supp: 1%)
+['suv', 'midnight'] => ['safe'] (Conf: 70%, Supp: 3%)
+['suv', 'sedan', 'dawn'] => ['safe'] (Conf: 70%, Supp: 1%)
+['spring', 'dawn'] => ['safe'] (Conf: 70%, Supp: 3%)
+['midnight', 'spring'] => ['sedan'] (Conf: 70%, Supp: 3%)
+['brooklyn', 'midnight', 'sedan'] => ['safe'] (Conf: 70%, Supp: 1%)
+['night', 'sedan', 'queens'] => ['safe'] (Conf: 70%, Supp: 1%)
+['sedan', 'unspecified_borough', 'winter', 'morning'] => ['safe'] (Conf: 70%, Supp: 1%)
+['brooklyn', 'suv', 'morning'] => ['safe'] (Conf: 70%, Supp: 1%)
+['sedan', 'bronx'] => ['safe'] (Conf: 70%, Supp: 5%)
+['sedan', 'winter', 'queens', 'suv'] => ['safe'] (Conf: 70%, Supp: 1%)
