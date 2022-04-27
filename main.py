@@ -94,7 +94,7 @@ def get_association_rules(L_frequent_item, support_data):
                 supp_left = support_data[frozenset(rule_left)]
                 supp_whole = support_data[frozenset(item)]
                 conf = supp_whole / supp_left
-                if conf > min_conf:
+                if conf >= min_conf:
                     rules.append([rule_left, rule_right, conf, supp_whole])
     # print(rules)
     rules.sort(key=itemgetter(2), reverse=True)
