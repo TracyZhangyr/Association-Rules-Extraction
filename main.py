@@ -54,25 +54,16 @@ def get_frequency_set(data, min_sup):
                 if prune_flage == 0:
                     final_candi.add(candidate)
 
-<<<<<<< HEAD
         # Initialize candidate:frequency dictionary (f = 0)
         candidates_freqs = dict()
         for candidate in final_candi:
             candidates_freqs[candidate] = 0
         # Update each candidate's frequency
-=======
-        candidates_freqs = {candidate: 0 for candidate in list(final_candi)}
->>>>>>> 291523c174adb70252d5862a9b8643b038a02db4
         for item in data:
             for candidate in final_candi:
                 if candidate.issubset(item):
                     candidates_freqs[candidate] = candidates_freqs[candidate] + 1
-<<<<<<< HEAD
         candidates_support = {candidate:(candidates_freqs[candidate]/len(data)) for candidate in final_candi}
-=======
-
-        candidates_support = {candidate: (candidates_freqs[candidate] / len(data)) for candidate in final_candi}
->>>>>>> 291523c174adb70252d5862a9b8643b038a02db4
 
         # Keep the candidate frequency sets whose support value >= min_sup
         L_k = [candidate for candidate in final_candi if candidates_support[candidate] >= min_sup]
@@ -94,7 +85,6 @@ def get_frequency_set(data, min_sup):
         if flag == 0:
             L_frequent_item.append(temp_list)
             sorted_supp.append(s[1])
-<<<<<<< HEAD
     return L_frequent_item, sorted_supp, support_data
 
 def get_association_rules(L_frequent_item, support_data, min_supp, min_conf):
@@ -117,15 +107,13 @@ def get_association_rules(L_frequent_item, support_data, min_supp, min_conf):
 
     return rules
     
-=======
-    return L_frequent_item, sorted_supp
-
-
->>>>>>> 291523c174adb70252d5862a9b8643b038a02db4
 def main():
     # Input arguments format: <target dataset> <min_sup> <min_conf>
-    dataset = sys.argv[1]  # Expected input: 'INTEGRATED-DATASET.csv'
-    min_sup, min_conf = float(sys.argv[2]), float(sys.argv[3])  # Expected input: 0.01, 0.5
+    # dataset = sys.argv[1]  # Expected input: 'INTEGRATED-DATASET.csv'
+    dataset = 'test.csv'
+    # min_sup, min_conf = float(sys.argv[2]), float(sys.argv[3])  # Expected input: 0.01, 0.5
+    min_sup = 0.7
+    min_conf = 0.8
 
     # Load data from target dataset
     data = load_csv(dataset)
@@ -135,7 +123,6 @@ def main():
     L_frequent_item, sorted_supp, support_data = get_frequency_set(data, min_sup)
 
     # 2. Output frequent itemsets as required format
-<<<<<<< HEAD
     print("==Frequent itemsets (min_sup="+str(min_sup*100)+"%)")
     for idx, item in enumerate(L_frequent_item):
         supp = sorted_supp[idx]
@@ -148,16 +135,6 @@ def main():
     for rule in rules:
         print(list(rule[0]), '=>', list(rule[1]), '(Conf: ', str(int(rule[2]*100)), '%, Supp :', str(int(rule[3]*100)), '%)')
 
-=======
-    print("==Frequent itemsets (min_sup=" + str(min_sup * 100) + "%)\n")
-    for idx, item in enumerate(L_frequent_item):
-        supp = sorted_supp[idx]
-        print(str(item) + ', ' + str(int(supp * 100)) + "%)\n")
-
-    # TODO: Get association rules
-    # 3. Get and print association rules by Apriori algorithm
-    print("==High-confidence association rules (min_conf=" + str(min_conf * 100) + "%)\n")
->>>>>>> 291523c174adb70252d5862a9b8643b038a02db4
 
 
 if __name__ == '__main__':
