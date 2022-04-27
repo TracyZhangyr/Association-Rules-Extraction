@@ -13,15 +13,20 @@ def load_csv(dataset_name):
         return data
 
 def get_frequency_set(data, min_sup):
-
-    items = set().union(*data)
+    items = set().union(*data) # All elements in data which don't repeat
     L_frequent = set()
+    L_frequent_item = []
     support_data = dict()
+    sorted_supp = []
     L_k = [frozenset()]
 
     # Generate deeper (k-1) frequency itemsets until we can't find more L_k
-    while len(L_k) != 0:
-        if L_k == [frozenset()]:
+    n = 0
+    while len(L_k) > 0:
+        # L_k.remove(frozenset({''}))
+        n = n + 1
+        # if L_k == [frozenset()]:
+        if n == 1:
             L_candidates = [frozenset([item]) for item in items]
         else: 
             L_candidates = set()
@@ -52,8 +57,24 @@ def get_frequency_set(data, min_sup):
         L_k = [candidate for candidate in L_candidates if candidates_support[candidate] >= min_sup]
         L_frequent = L_frequent.union(L_k)
         support_data.update({k:v for k, v in candidates_support.items() if k in set(L_k)})
-
-    return L_frequent, support_data
+    
+    L_sorted = sorted(support_data.items(), key=lambda item:item[1], reverse=True)
+    L_frequent_item = []
+    sorted_supp = []
+    for s in L_sorted:
+        flag = 0
+        temp_list = []
+        frozen_set = s[0]
+        for i in frozen_set:
+            print(i)
+            if i == '':
+                flag = 1
+                break
+            temp_list.append(i)
+        if flag == 0:
+            L_frequent_item.append(temp_list)
+            sorted_supp.append(s[1])
+    return L_frequent_item, sorted_supp
 
 def main():
     
@@ -61,22 +82,23 @@ def main():
     # dataset = sys.argv[1] # Expected input: 'INTEGRATED-DATASET.csv'
     dataset = 'INTEGRATED-DATASET.csv'
     # min_sup, min_conf = float(sys.argv[2]), float(sys.argv[3]) # Expected input: 0.01, 0.5
-    min_sup = 0.01
+    min_sup = 0.2
     min_conf = 0.5
 
     # Load data from target dataset
     data = load_csv(dataset)
 
-    # 1. Get and print frequent itemsets by Apriori algorithm
-    print("==Frequent itemsets (min_sup="+str(min_sup*100)+"%)\n")
+    # 1. Get sorted frequent itemsets by Apriori algorithm
+    L_frequent_item, sorted_supp = get_frequency_set(data, min_sup)
 
-    L_frequent, support_data = get_frequency_set(data, min_sup)
-    L_frequent = sorted(L_frequent, key=lambda x: support_data[x], reverse=True)
-    for item in L_frequent.items():
-        print(item + ', ' + str(support_data[item]*100) +"%)\n")
+    # 2. Output frequent itemsets as required format
+    print("==Frequent itemsets (min_sup="+str(min_sup*100)+"%)\n")
+    for idx, item in enumerate(L_frequent_item):
+        supp = sorted_supp[idx]
+        print( str(item) + ', ' + str(int(supp*100)) +"%)\n")
 
     # TODO: Get association rules
-    # 2. Get and print association rules by Apriori algorithm
+    # 3. Get and print association rules by Apriori algorithm
     print("==High-confidence association rules (min_conf="+str(min_conf*100)+"%)\n")
 
 

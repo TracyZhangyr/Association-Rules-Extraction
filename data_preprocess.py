@@ -4,8 +4,8 @@ import csv
 
 def is_recent(row):
     year = int(row[0].split('/')[2])
-    # return year >= 2022 # For quick check
-    return year >= 2020
+    return year >= 2022 # For quick check
+    # return year >= 2020
 
 def get_crush_season(row):
     month = int(row[0].split('/')[0])
@@ -103,6 +103,8 @@ def get_vehicle_type(row):
     type_data = list(data)
     type_data = ['truck' if 'truck' in item or 'dump' in item else item for item in type_data]
     type_data = ['suv' if 'station_wagon' in item or 'sport_utility_vehicle' in item else item for item in type_data]
+    type_data = ['sedan' if 'sedan' in item else item for item in type_data]
+    type_data = ['unspecified_vehicle' if 'unknow_ve' in item else item for item in type_data]
 
     return type_data
 
