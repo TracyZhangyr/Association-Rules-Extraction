@@ -52,12 +52,15 @@ def get_frequency_set(data, min_sup):
                 if prune_flage == 0:
                     final_candi.add(candidate)
 
-        candidates_freqs = {candidate:0 for candidate in list(final_candi)}
+        # Initialize candidate:frequency dictionary (f = 0)
+        candidates_freqs = dict()
+        for candidate in final_candi:
+            candidates_freqs[candidate] = 0
+        # Update each candidate's frequency
         for item in data:
             for candidate in final_candi:
                 if candidate.issubset(item):
                     candidates_freqs[candidate] = candidates_freqs[candidate] + 1
-
         candidates_support = {candidate:(candidates_freqs[candidate]/len(data)) for candidate in final_candi}
 
         # Keep the candidate frequency sets whose support value >= min_sup
@@ -73,7 +76,6 @@ def get_frequency_set(data, min_sup):
         temp_list = []
         frozen_set = s[0]
         for i in frozen_set:
-            print(i)
             if i == '':
                 flag = 1
                 break
@@ -81,8 +83,28 @@ def get_frequency_set(data, min_sup):
         if flag == 0:
             L_frequent_item.append(temp_list)
             sorted_supp.append(s[1])
-    return L_frequent_item, sorted_supp
+    return L_frequent_item, sorted_supp, support_data
 
+def get_association_rules(L_frequent_item, support_data, min_supp, min_conf):
+    rules = []
+    for item in L_frequent_item:
+        # print("L_f: ", L_frequent_item)
+        item = set(item)
+        sub_sets = [(item.difference([elem]), set([elem])) for elem in item]
+        # print("subs: ", subs)
+        if set() not in sub_sets[0]:
+            for s in sub_sets: # Each subset
+                rule_left = s[0]
+                rule_right = s[1]
+                supp_left = support_data[frozenset(rule_left)]
+                supp_whole = support_data[frozenset(item)]
+                conf = supp_whole / supp_left
+                if conf > min_conf:
+                    rules.append([rule_left, rule_right, conf, supp_whole])
+    print(rules)
+
+    return rules
+    
 def main():
     
     # Input arguments format: <target dataset> <min_sup> <min_conf>
@@ -96,17 +118,21 @@ def main():
     data = load_csv(dataset)
 
     # 1. Get sorted frequent itemsets by Apriori algorithm
-    L_frequent_item, sorted_supp = get_frequency_set(data, min_sup)
+    L_frequent_item, sorted_supp, support_data = get_frequency_set(data, min_sup)
 
     # 2. Output frequent itemsets as required format
-    print("==Frequent itemsets (min_sup="+str(min_sup*100)+"%)\n")
+    print("==Frequent itemsets (min_sup="+str(min_sup*100)+"%)")
     for idx, item in enumerate(L_frequent_item):
         supp = sorted_supp[idx]
-        print( str(item) + ', ' + str(int(supp*100)) +"%)\n")
+        print( str(item) + ', ' + str(int(supp*100)) +"%)")
 
     # TODO: Get association rules
     # 3. Get and print association rules by Apriori algorithm
-    print("==High-confidence association rules (min_conf="+str(min_conf*100)+"%)\n")
+    rules = get_association_rules(L_frequent_item, support_data, min_sup, min_conf)
+    print("==High-confidence association rules (min_conf="+str(min_conf*100)+"%)")
+    for rule in rules:
+        print(list(rule[0]), '=>', list(rule[1]), '(Conf: ', str(int(rule[2]*100)), '%, Supp :', str(int(rule[3]*100)), '%)')
+
 
 
 if __name__ == '__main__':
