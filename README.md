@@ -42,7 +42,7 @@ python3 main.py <target dataset> <min_sup> <min_conf>
 Examples:
 
 ```shell
-python3 main.py INTEGRATED-DATASET.csv 0.2 0.5
+ python3 main.py INTEGRATED-DATASET.csv 0.01 0.7
 ```
 
 
@@ -92,7 +92,7 @@ python3 main.py INTEGRATED-DATASET.csv 0.2 0.5
 #### f. Command Line Specification of A Compelling Sample Run
 
 ```shell
-python3 main.py INTEGRATED-DATASET.csv 0.2 0.5
+ python3 main.py INTEGRATED-DATASET.csv 0.01 0.7
 ```
 
 
