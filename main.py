@@ -63,7 +63,7 @@ def get_frequency_set(data, min_sup):
             for candidate in final_candi:
                 if candidate.issubset(item):
                     candidates_freqs[candidate] = candidates_freqs[candidate] + 1
-        candidates_support = {candidate:(candidates_freqs[candidate]/len(data)) for candidate in final_candi}
+        candidates_support = {candidate: (candidates_freqs[candidate] / len(data)) for candidate in final_candi}
 
         # Keep the candidate frequency sets whose support value >= min_sup
         L_k = [candidate for candidate in final_candi if candidates_support[candidate] >= min_sup]
@@ -87,13 +87,14 @@ def get_frequency_set(data, min_sup):
             sorted_supp.append(s[1])
     return L_frequent_item, sorted_supp, support_data
 
+
 def get_association_rules(L_frequent_item, support_data, min_supp, min_conf):
     rules = []
     for item in L_frequent_item:
         item = set(item)
         sub_sets = [(item.difference([elem]), set([elem])) for elem in item]
         if set() not in sub_sets[0]:
-            for s in sub_sets: # Each subset
+            for s in sub_sets:  # Each subset
                 rule_left = s[0]
                 rule_right = s[1]
                 supp_left = support_data[frozenset(rule_left)]
@@ -104,7 +105,8 @@ def get_association_rules(L_frequent_item, support_data, min_supp, min_conf):
     # print(rules)
     rules.sort(key=itemgetter(2), reverse=True)
     return rules
-    
+
+
 def main():
     # Input arguments format: <target dataset> <min_sup> <min_conf>
     dataset = sys.argv[1]  # Expected input: 'INTEGRATED-DATASET.csv'
@@ -120,19 +122,19 @@ def main():
     L_frequent_item, sorted_supp, support_data = get_frequency_set(data, min_sup)
 
     # 2. Output frequent itemsets as required format
-    print("==Frequent itemsets (min_sup="+str(min_sup*100)+"%)")
+    print("==Frequent itemsets (min_sup=" + str(min_sup * 100) + "%)")
     for idx, item in enumerate(L_frequent_item):
         supp = sorted_supp[idx]
-        print( str(item) + ', ' + str(int(supp*100)) +"%)")
+        print(str(item) + ', ' + str(int(supp * 100)) + "%)")
 
     # 3. Get sorted association rules by frequent itemsets
     rules = get_association_rules(L_frequent_item, support_data, min_sup, min_conf)
     
     # 4. Output association rules as required format
-    print("==High-confidence association rules (min_conf="+str(min_conf*100)+"%)")
+    print("==High-confidence association rules (min_conf=" + str(min_conf*100) + "%)")
     for rule in rules:
-        print(list(rule[0]), '=>', list(rule[1]), '(Conf: ', str(int(rule[2]*100)), '%, Supp :', str(int(rule[3]*100)), '%)')
-
+        print(list(rule[0]), '=>', list(rule[1]), '(Conf: ', str(int(rule[2] * 100)), '%, Supp :',
+              str(int(rule[3] * 100)), '%)')
 
 
 if __name__ == '__main__':
