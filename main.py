@@ -1,6 +1,8 @@
 import sys
 import csv, os
 
+from attr import frozen
+
 def load_csv(dataset_name):
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '{}'.format(dataset_name)), newline='') as csvfile:
         datareader = csv.reader(csvfile, delimiter=',')
@@ -13,49 +15,54 @@ def load_csv(dataset_name):
         return data
 
 def get_frequency_set(data, min_sup):
-    items = set().union(*data) # All elements in data which don't repeat
-    L_frequent = set()
     L_frequent_item = []
     support_data = dict()
     sorted_supp = []
     L_k = [frozenset()]
 
+    items = set().union(*data) # All elements in data which don't repeat
+
     # Generate deeper (k-1) frequency itemsets until we can't find more L_k
     n = 0
     while len(L_k) > 0:
-        # L_k.remove(frozenset({''}))
         n = n + 1
-        # if L_k == [frozenset()]:
         if n == 1:
             L_candidates = [frozenset([item]) for item in items]
+            final_candi = [frozenset([item]) for item in items]
         else: 
             L_candidates = set()
+            final_candi = set()
             for L_1 in L_k:
                 for L_2 in L_k:
                     for item in L_2:
-                        diff_ele = L_2.difference(set([item]))
-                        if diff_ele.issubset(L_1):
+                        diff_ele = L_2.difference(set([item])) # Return elements in L_2 but not in item
+                        if diff_ele.issubset(L_1): # If L_1 has these elements
                             r = frozenset(L_1.union(set([item])))
                             if r not in L_candidates:
                                 L_candidates.add(r)
+
+            # Use pruning to remove the candidates that are not in L_k
             for candidate in set(L_candidates):
+                prune_flage = 0
                 subsets = [candidate.difference([elem]) for elem in candidate]
                 for item in subsets:
                     if item not in L_k:
-                        L_candidates.remove(candidate)
+                        prune_flage = 1
                         break
- 
-        candidates_freqs = {candidate:0 for candidate in list(L_candidates)}
+                if prune_flage == 0:
+                    final_candi.add(candidate)
+
+        candidates_freqs = {candidate:0 for candidate in list(final_candi)}
         for item in data:
-            for candidate in L_candidates:
+            for candidate in final_candi:
                 if candidate.issubset(item):
                     candidates_freqs[candidate] = candidates_freqs[candidate] + 1
 
-        candidates_support = {candidate:(candidates_freqs[candidate]/len(data)) for candidate in L_candidates}
+        candidates_support = {candidate:(candidates_freqs[candidate]/len(data)) for candidate in final_candi}
 
         # Keep the candidate frequency sets whose support value >= min_sup
-        L_k = [candidate for candidate in L_candidates if candidates_support[candidate] >= min_sup]
-        L_frequent = L_frequent.union(L_k)
+        L_k = [candidate for candidate in final_candi if candidates_support[candidate] >= min_sup]
+        # L_frequent = L_frequent.union(L_k)
         support_data.update({k:v for k, v in candidates_support.items() if k in set(L_k)})
     
     L_sorted = sorted(support_data.items(), key=lambda item:item[1], reverse=True)
