@@ -1,0 +1,37 @@
+==Frequent itemsets (min_sup=20.0%)
+['safe'], 67%
+['sedan'], 61%
+['winter'], 52%
+['suv'], 48%
+['spring'], 47%
+['safe', 'sedan'], 42%
+['safe', 'winter'], 36%
+['unspecified_borough'], 33%
+['safe', 'suv'], 32%
+['winter', 'sedan'], 32%
+['injured'], 32%
+['safe', 'spring'], 31%
+['spring', 'sedan'], 29%
+['suv', 'winter'], 25%
+['afternoon'], 24%
+['suv', 'spring'], 22%
+['safe', 'winter', 'sedan'], 22%
+['brooklyn'], 22%
+['safe', 'unspecified_borough'], 21%
+['sedan', 'unspecified_borough'], 21%
+==High-confidence association rules (min_conf=50.0%)
+['winter', 'sedan'] => ['safe'] (Conf: 69%, Supp: 22%)
+['winter'] => ['safe'] (Conf: 68%, Supp: 36%)
+['sedan'] => ['safe'] (Conf: 68%, Supp: 42%)
+['suv'] => ['safe'] (Conf: 67%, Supp: 32%)
+['spring'] => ['safe'] (Conf: 65%, Supp: 31%)
+['unspecified_borough'] => ['safe'] (Conf: 64%, Supp: 21%)
+['unspecified_borough'] => ['sedan'] (Conf: 63%, Supp: 21%)
+['safe', 'winter'] => ['sedan'] (Conf: 63%, Supp: 22%)
+['safe'] => ['sedan'] (Conf: 63%, Supp: 42%)
+['winter'] => ['sedan'] (Conf: 62%, Supp: 32%)
+['spring'] => ['sedan'] (Conf: 61%, Supp: 29%)
+['safe', 'sedan'] => ['winter'] (Conf: 53%, Supp: 22%)
+['safe'] => ['winter'] (Conf: 53%, Supp: 36%)
+['sedan'] => ['winter'] (Conf: 52%, Supp: 32%)
+['suv'] => ['winter'] (Conf: 52%, Supp: 25%)

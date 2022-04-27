@@ -1,14 +1,12 @@
 import sys
 import csv, os
 from operator import itemgetter
-from attr import frozen
 
 
 def load_csv(dataset_name):
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '{}'.format(dataset_name)),
               newline='') as csvfile:
         datareader = csv.reader(csvfile, delimiter=',')
-
         data = []
         for row in datareader:
             data.append(set(row))
@@ -16,11 +14,10 @@ def load_csv(dataset_name):
         return data
 
 
-def get_frequency_set(data, min_sup):
-    L_frequent_item = []
+def get_frequency_set(data):
     support_data = dict()
-    sorted_supp = []
     L_k = [frozenset()]
+    data_size = len(data)
 
     items = set().union(*data)  # All elements in data which don't repeat
 
@@ -34,42 +31,38 @@ def get_frequency_set(data, min_sup):
         else:
             L_candidates = set()
             final_candi = set()
+
             for L_1 in L_k:
                 for L_2 in L_k:
-                    for item in L_2:
-                        diff_ele = L_2.difference(set([item]))  # Return elements in L_2 but not in item
-                        if diff_ele.issubset(L_1):  # If L_1 has these elements
-                            r = frozenset(L_1.union(set([item])))
-                            if r not in L_candidates:
-                                L_candidates.add(r)
+                    if not set(L_2).issubset(L_1):
+                        r = frozenset(set(L_2).union(L_1))
+                        if r not in L_candidates:
+                            L_candidates.add(r)
 
             # Use pruning to remove the candidates that are not in L_k
             for candidate in set(L_candidates):
-                prune_flage = 0
                 subsets = [candidate.difference([elem]) for elem in candidate]
-                for item in subsets:
-                    if item not in L_k:
-                        prune_flage = 1
-                        break
-                if prune_flage == 0:
+                if not any(item not in L_k for item in subsets):
                     final_candi.add(candidate)
 
         # Initialize candidate:frequency dictionary (f = 0)
-        candidates_freqs = dict()
+        candi_freq = dict()
         for candidate in final_candi:
-            candidates_freqs[candidate] = 0
+            candi_freq[candidate] = 0
+
         # Update each candidate's frequency
         for item in data:
             for candidate in final_candi:
                 if candidate.issubset(item):
-                    candidates_freqs[candidate] = candidates_freqs[candidate] + 1
-        candidates_support = {candidate: (candidates_freqs[candidate] / len(data)) for candidate in final_candi}
+                    candi_freq[candidate] = candi_freq[candidate] + 1
+
+        candidates_support = {candidate: (candi_freq[candidate] / data_size) for candidate in final_candi}
 
         # Keep the candidate frequency sets whose support value >= min_sup
         L_k = [candidate for candidate in final_candi if candidates_support[candidate] >= min_sup]
-        # L_frequent = L_frequent.union(L_k)
         support_data.update({k: v for k, v in candidates_support.items() if k in set(L_k)})
 
+    # Get frequent itemsets with their sorted support in decreasing order
     L_sorted = sorted(support_data.items(), key=lambda item: item[1], reverse=True)
     L_frequent_item = []
     sorted_supp = []
@@ -85,10 +78,11 @@ def get_frequency_set(data, min_sup):
         if flag == 0:
             L_frequent_item.append(temp_list)
             sorted_supp.append(s[1])
+
     return L_frequent_item, sorted_supp, support_data
 
 
-def get_association_rules(L_frequent_item, support_data, min_supp, min_conf):
+def get_association_rules(L_frequent_item, support_data):
     rules = []
     for item in L_frequent_item:
         item = set(item)
@@ -110,31 +104,29 @@ def get_association_rules(L_frequent_item, support_data, min_supp, min_conf):
 def main():
     # Input arguments format: <target dataset> <min_sup> <min_conf>
     dataset = sys.argv[1]  # Expected input: 'INTEGRATED-DATASET.csv'
-    # dataset = 'INTEGRATED-DATASET.csv'
+    global min_sup, min_conf
     min_sup, min_conf = float(sys.argv[2]), float(sys.argv[3])  # Expected input: 0.01, 0.5
-    # min_sup = 0.05
-    # min_conf = 0.7
 
     # Load data from target dataset
     data = load_csv(dataset)
 
     # 1. Get sorted frequent itemsets by Apriori algorithm
-    L_frequent_item, sorted_supp, support_data = get_frequency_set(data, min_sup)
+    L_frequent_item, sorted_supp, support_data = get_frequency_set(data)
 
-    # 2. Output frequent itemsets as required format
-    print("==Frequent itemsets (min_sup=" + str(min_sup * 100) + "%)")
-    for idx, item in enumerate(L_frequent_item):
-        supp = sorted_supp[idx]
-        print(str(item) + ', ' + str(int(supp * 100)) + "%)")
+    # 2. Get association rules by Apriori algorithm
+    rules = get_association_rules(L_frequent_item, support_data)
 
-    # 3. Get sorted association rules by frequent itemsets
-    rules = get_association_rules(L_frequent_item, support_data, min_sup, min_conf)
-    
-    # 4. Output association rules as required format
-    print("==High-confidence association rules (min_conf=" + str(min_conf*100) + "%)")
-    for rule in rules:
-        print(list(rule[0]), '=>', list(rule[1]), '(Conf: ', str(int(rule[2] * 100)), '%, Supp :',
-              str(int(rule[3] * 100)), '%)')
+    # 3. Output frequent itemsets and high-confidence association rules to output.txt
+    with open('output.txt', 'w') as file:
+        file.write("==Frequent itemsets (min_sup=" + str(min_sup * 100) + "%)\n")
+        for idx, item in enumerate(L_frequent_item):
+            supp = sorted_supp[idx]
+            file.write(str(item) + ', ' + str(int(supp * 100)) + "%\n")
+
+        file.write("==High-confidence association rules (min_conf=" + str(min_conf * 100) + "%)\n")
+        for rule in rules:
+            file.write('{0} => {1} (Conf: {2}%, Supp: {3}%)\n'.format(str(list(rule[0])), str(list(rule[1])),
+                                                                      str(int(rule[2] * 100)), str(int(rule[3] * 100))))
 
 
 if __name__ == '__main__':

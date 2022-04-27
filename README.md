@@ -23,19 +23,10 @@ Ruixuan Fu (UNI: rf2762)
 
 #### c. Commands:
 
-1. Install dependencies:
-
-
- Environment:
+1. Environment:
 
 ```shell
 python: 3.9
-```
-
- Installations:
-
-```shell
-pip3 install requests
 ```
 
 
@@ -93,7 +84,7 @@ python3 main.py INTEGRATED-DATASET.csv 0.2 0.5
 
 1. Internal design:
    We used the a-prior algorithm to construct our program. There are maily three functions in our program. The first function 'load_csv(dataset_name)' can load the dataset that the user inputed as the first argument, then return as 'data'. The second function 'get_frequency_set(data, min_sup)' was to generate the frequency itemsets based on a-prior's idea. It received data and the inputed minimal support value, found all frequency itemsets that have supp higher than min_supp, by iteratively generating frequency itemsets and finding candidate itemsets level by level, until there are no more freqency itemsets can be found. Then based on the freqency itemsets with their corresponding supp values, the third funtion get_association_rules(L_frequent_item, support_data, min_supp, min_conf) found association rules according to the formula that rule(A=>B)_confidence_value = (A,B)support_value / (A)support_value. 
-      
+   
 
 #### f. Command Line Specification of A Compelling Sample Run
 
