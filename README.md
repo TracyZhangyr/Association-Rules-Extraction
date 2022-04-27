@@ -12,11 +12,12 @@ Ruixuan Fu (UNI: rf2762)
 1. proj3
 
    1. main.py
-   2. spacy_help_functions.py
+   
+2. INTEGRATED-DATASET.csv
 
 2. README.md
 
-3. transcript.txt
+3. example-run.txt
 
    
 
@@ -83,25 +84,24 @@ python3 main.py INTEGRATED-DATASET.csv 0.2 0.5
 #### e. Project Description
 
 1. Internal design:
+   
    We used the a-prior algorithm to construct our program. There are maily three functions in our program. The first function 'load_csv(dataset_name)' can load the dataset that the user inputed as the first argument, then return as 'data'. The second function 'get_frequency_set(data, min_sup)' was to generate the frequency itemsets based on a-prior's idea. It received data and the inputed minimal support value, found all frequency itemsets that have supp higher than min_supp, by iteratively generating frequency itemsets and finding candidate itemsets level by level, until there are no more freqency itemsets can be found. Then based on the freqency itemsets with their corresponding supp values, the third funtion get_association_rules(L_frequent_item, support_data, min_supp, min_conf) found association rules according to the formula that rule(A=>B)_confidence_value = (A,B)support_value / (A)support_value. 
+   
    
 
 #### f. Command Line Specification of A Compelling Sample Run
 
 ```shell
-engine_ID = de217206a85e0b817
-API_Key = AIzaSyD0FBYWKa1fBB2nYsg6RvP9DfvOLCpd_TI
+python3 main.py INTEGRATED-DATASET.csv 0.2 0.5
 ```
 
 
 
 #### g. Additional Information
 
-1. We modified the original spacy_help_functions.py in SpanBERT to suit our ISE algorithm. (Changes are mentioned in the above setion e: Step 3 Methodology).
+1. Reference for A-Priori Algorithm:
 
-2. Reference for using BeautifulSoup to extract plain text:
-
-   https://stackoverflow.com/questions/1936466/beautifulsoup-grab-visible-webpage-text/24968429#24968429
+   Rakesh Agrawal and Ramakrishnan Srikant: [Fast Algorithms for Mining Association Rules in Large Databases](http://www.cs.columbia.edu/~gravano/Qual/Papers/agrawal94.pdf), VLDB 1994
 
    
 
