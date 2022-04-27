@@ -95,6 +95,10 @@ Examples:
  python3 main.py INTEGRATED-DATASET.csv 0.01 0.7
 ```
 
+Specification:
+
+   By using this combination, we can figure out some interesting and revealing results about different situation’s safety. For example, we can find that the collisions involved bike are more possible to have people injured (['bike'] => ['injured'] (Conf: 79%, Supp: 2%)), while suv, bus, trucks or other ‘stronger’ vehicles are more likely to keep safe. Besides, we can also find various borough’s safer time period, which may have interesting differences. Such as the queens with dawn is more possible to be in association with safe (['queens', 'dawn'] => ['safe'] (Conf: 79%, Supp: 1%), while for Brooklyn is dawn and noon (['brooklyn', 'dawn'] => ['safe'] (Conf: 72%, Supp: 1%), [‘brooklyn', 'noon'] => ['safe'] (Conf: 71%, Supp: 3%)) and for Manhattan is midnight and morning (['manhattan', 'midnight'] => ['safe'] (Conf: 73%, Supp: 1%), ['manhattan', 'morning'] => ['safe'] (Conf: 73%, Supp: 1%)). There are some other associations between season, vehicle, period combinations we can also find from this combination.
+The association rules results mainly contain safe consequence. We speculate that it may be because there are fewer vehicles on the road during these periods, so even if there is a collision, the number of casualties is low.
 
 
 #### g. Additional Information
